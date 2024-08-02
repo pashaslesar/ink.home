@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <script defer src="./scripts/script.js"></script>
+    <title>Ink. House</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <a><img src="images/header/star.svg" alt="star"></a>
+                <p>Ink. House</p>
+            </div>
+            <div class="burger-menu">
+                <button class="burger" id="burger">
+                    <img src="images/header/burger.png" alt="burger icon">
+                </button>
+                <button class="cross visually-hidden" id="cross">
+                    <img src="images/header/cross.svg" alt="cross icon">
+                </button>
+            </div>
+            <ul class="menu ">
+                <li><a href="#catalog" class="menu-item">Репродукции</a></li>
+                <li><a href="#promo" class="menu-item">Новинки</a></li>
+                <li><a href="#contacts" class="menu-item">О нас</a></li>
+                <li>
+                    <a href="#">
+                        <div class="cart menu-cart">
+                            <img src="images/header/cartdefault.svg" class="cart-icon" id="cart-icon" alt="cart">
+                        </div></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero" id="hero">
+            <div class="hero-img">
+                <img src="images/hero/birdhero.png" alt="bird">
+            </div>
+            <div class="hero-text">
+                <h1>Реплики картин от <span>Ink. House</span></h1>
+                <p>
+                    Высокое качество отрисовки на плотной бумаге или льняном холсте. 
+                    Редкие произведения, доступные цены.</p>
+                <div class="hero-button">
+                    <a href="#" class="hero-btn">Продукция</a>
+                </div>
+            </div>
+        </section>
+        <section class="catalog" id="catalog">
+            <div class="catalog-container">
+                <h2 class="catalog-text">Репродукции</h2>
+                <ul class="catalog-btn">
+                    <li><button class="c-btn-item item-1" id="btn-france">Франция</button></li>
+                    <li><button class="c-btn-item item-2" id="btn-germany">Германия</button></li>
+                    <li><button class="c-btn-item item-3" id="btn-england">Англия</button></li>
+                </ul>
+            </div>
+            <div class="container">
+                <ul class="card-ul" id="artworks-container"></ul>
+            </div>
+        </section>
+        <section class="promo" id="promo">
+            <h2 class="visually-hidden">Новинки</h2>
+            <div class="promo-background"></div>
+            <section class="promo-content">
+                <div class="promo-name">
+                    <img src="images/promo/promostar.svg" alt="promo star">
+                    <h2>Новая коллекция французских авторов</h2>
+                </div>
+                <div class="promo-text">
+                    <p>
+                        Сложно сказать, почему акционеры крупнейших компаний призывают 
+                        нас к новым свершениям, которые, в свою очередь, должны быть 
+                        заблокированы в рамках своих собственных рациональных ограничений.</p>
+                    <p>
+                        Принимая во внимание показатели успешности, граница обучения кадров 
+                        предопределяет высокую востребованность направлений прогрессивного развития.</p>
+                    <a href="#" class="promo-btn">Ознакомиться</a>
+                </div>
+            </section>
+        </section>
+        <section class="contacts" id="contacts">
+            <div class="contacts-div">
+                <div class="frame">
+                    <div class="frame-img">
+                        <img src="images/info/frame.png" alt="frame">
+                    </div>
+                    <div class="hand">
+                        <img src="images/info/hand.png" alt="hand">
+                    </div>
+                </div>
+                <div class="team">
+                    <h2>Наша команда</h2>
+                    <p>
+                        Значимость этих проблем настолько очевидна, что базовый 
+                        вектор развития позволяет оценить значение 
+                        экспериментов, поражающих по своей масштабности 
+                        и грандиозности. Мы вынуждены отталкиваться от 
+                        того, что консультация с широким активом.
+                    </p>
+                    <ul class="team-members">
+                        <li><img src="images/info/human1.jpg" class="member" alt="person 1"></li>
+                        <li><img src="images/info/human2.jpg" class="member" alt="person 2"></li>
+                        <li><img src="images/info/human3.jpg" class="member" alt="person 3"></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-logo">
+            <div class="flogo">
+                <a href="#hero"><img src="images/header/star.svg" alt="star"></a>
+                <p class="foot-logo">Ink. House</p>
+            </div>
+            <div class="workshop">
+                <a href="tel:79995435454" class="phone">+7 (999) 543-54-54</a>
+                <p class="gray">Мастерская</p>
+            </div>
+        </div>
+        <div class="info">
+            <p class="visually-hidden">Дополнительно</p>
+            <div class="info-elements">
+                <div class="info-item">
+                    <a href="#catalog">Репродукции</a>
+                    <ul>
+                        <li><p class="gray">Франция</p></li>
+                        <li><p class="gray">Германия</p></li>
+                        <li><p class="gray">Англия</p></li>
+                    </ul>
+                </div>
+                <div class="info-item">
+                    <a href="#promo">Новинки</a>
+                    <ul>
+                        <li><p class="gray">2021</p></li>
+                        <li><p class="gray">2020</p></li>
+                    </ul>
+                </div>
+                <div class="info-item">
+                    <a href="#contacts">О нас</a>
+                    <ul>
+                        <li><p class="gray">Художники</p></li>
+                        <li><p class="gray">Менеджеры</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="media">
+            <p class="visually-hidden">Ссылки на социальные сети</p>
+            <div class="media-items">
+                <div class="media-links">
+                    <a href="#" class="media-item"><img src="images/footer/facebookdefault.svg" alt="media item"></a>
+                    <a href="#" class="media-item"><img src="images/footer/instadefault.svg" alt="media item"></a>
+                    <a href="#" class="media-item"><img src="images/footer/youtubedefault.svg" alt="media item"></a>
+                </div>
+                <p class="gray">Ink. House ®<span class="hidden-br"><br></span>All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

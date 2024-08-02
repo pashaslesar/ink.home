@@ -1,0 +1,1544 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body, html {
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+header, footer {
+    background-color: rgba(225, 237, 230, 1);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    margin: 0 165px;
+}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 70px;
+}
+
+.nav ul li {
+    display: inline;
+}
+
+.nav .hidden-li {
+    display: none;
+}
+
+.burger-menu {
+    display: none;
+}
+
+.logo img {
+    height: 35px;
+    width: 35px;
+}
+
+.logo p {
+    color: rgba(89, 141, 102, 1);
+    font-size: 20px;
+    line-height: 35px;
+    margin: 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: rgba(44, 45, 53, 1);
+}
+
+.cart:hover .cart-icon {
+    content: url('../images/header/carthover.svg');
+}
+
+.hero {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-text {
+    max-width: 540px;
+    width: 100%;
+    max-height: 330px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.hero-img {
+    max-width: 540px;
+    width: 100%;
+    max-height: 620px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero-img img {
+    max-width: 450px;
+    width: 100%;
+    height: auto;
+    transform: scaleX(-1);
+}
+
+.hero-text h1,
+.hero-text p {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-text h1 {
+    font-size: 6vh;
+    margin-bottom: 3vh;
+    width: 80%;
+}
+
+.hero-text p {
+    font-size: 2vh;
+    margin-bottom: 7vh;
+    width: 100%;
+    color: rgba(134, 146, 139, 1);
+}
+
+.hero-text span {
+    color: rgba(89, 141, 102, 1);
+}
+
+.hero-btn {
+    display: inline-block;
+    padding: 1.5vh 6vh;
+    font-size: 2.5vh;
+    color: rgba(89, 141, 102, 1);
+    background-color: transparent;
+    border: 1px solid rgba(89, 141, 102, 1);
+    text-align: center;
+    text-decoration: none;
+}
+
+.promo {
+    margin-top: 5vh;
+    position: relative;
+    height: 65vh;
+    background: url('../images/promo/jpgrectangle.jpg') no-repeat center center/cover;
+}
+
+.promo-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.902), rgba(0, 0, 0, 0));
+    background-size: cover;
+    background-blend-mode: overlay;
+    pointer-events: none;
+}
+
+.promo-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    padding: 4%;
+    margin-left: 10vh;
+}
+
+.promo-name {
+    display: flex;
+    align-items: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+.promo-name img {
+    width: 80px;
+    height: 80px;
+    border: 3px 0px 0px 0px;
+}
+
+.promo h2 {
+    font-size: 4vh;
+    margin-left: 2vh;
+    margin-bottom: 2.5vh;
+}
+
+.promo p {
+    font-size: 2vh;
+    margin-bottom: 2vh;
+    max-width: 540px;
+    width: 100%;
+}
+
+.promo-btn {
+    margin-top: 5vh;
+    display: inline-block;
+    padding: 2.5vh 9vh;
+    font-size: 3vh;
+    background-color: rgba(238, 219, 109, 1);
+    border: 1px solid rgba(238, 219, 109, 1);
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    min-width: 200px;
+    color: black;
+}
+
+.contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts-div {
+    display: flex;
+    background-color: #fff;
+    justify-content: space-around;
+    margin: 10vh 0;
+    width: 1110px;
+    height: 450px;
+    box-sizing: border-box;
+    gap: 25px;
+}
+
+.frame {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.frame-img img {
+    filter: grayscale(100%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 90%;
+    height: 90%;
+}
+
+.hand img {
+    transform: scaleX(-1);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    margin: 42px 60px;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    font-size: 2vh;
+}
+
+.team h2,
+.team p {
+    margin-top: 2vh;
+}
+
+.team h2 {
+    font-size: 5vh;
+}
+
+.team-members {
+    padding: 0;
+    margin-top: 2vh;
+    display: flex;
+    justify-content: flex-start;
+    gap: 4vh;
+    max-width: 75vh;
+    list-style-type: none;
+}
+
+.member {
+    width: 10vh;
+    height: 10vh;
+    border-radius: 50%;
+    background-size: cover;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2.2vh 0;
+}
+
+.card-ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: space-around;
+}
+
+.card {
+    background-color: rgba(225, 237, 230, 1);
+    padding: 2vh;
+    width: calc(33% - 2vh);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    font-size: 2vh;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.card img {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.card p, .card b {
+    margin: 10px 0;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.price {
+    font-size: 26px;
+    color: rgba(89, 141, 102, 1);
+}
+
+.author {
+    color: rgba(134, 146, 139, 1);
+}
+
+.description {
+    font-weight: 500;
+}
+
+.btn-cart {
+    padding: 10px;
+    background-color: rgba(225, 237, 230, 1);
+    border: 2px solid rgba(89, 141, 102, 1);
+    color: rgba(89, 141, 102, 1);
+    font-weight: 600;
+    width: 100%;
+    height: 8vh;
+    font-size: 22px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.catalog-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    padding: 20px;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+.catalog-text {
+    margin: 0;
+}
+
+.catalog-btn {
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.c-btn-item {
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: rgba(212, 232, 217, 1);
+    border: 0.5px solid rgba(212, 232, 217, 1);
+    transition: background-color 0.3s;
+    font-weight: 550;
+}
+
+.c-btn-item:hover {
+    background-color: rgba(89, 141, 102, 1);
+    color: white;
+}
+
+.c-btn-item:focus {
+    background-color: rgba(55, 107, 68, 1);
+    color: white;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    max-height: 170px;
+    gap: 20px;
+    padding: 20px 100px;
+    background-color: rgba(225, 237, 230, 1);
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flogo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 10px;
+}
+
+.flogo img {
+    height: 35px;
+    width: 35px;
+}
+
+.foot-logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(89, 141, 102, 1);
+}
+
+.workshop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.phone {
+    font-size: 20px;
+    text-decoration: none;
+    color: rgba(44, 45, 53, 1);
+}
+
+.gray {
+    color: rgba(134, 146, 139, 1);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-elements {
+    display: flex;
+    gap: 60px;
+}
+
+.info-item a {
+    font-size: 20px;
+    color: rgba(44, 45, 53, 1);
+    text-decoration: none;
+    display: block;
+}
+
+.info-item ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.info-item li {
+    font-size: 18px;
+}
+
+.media {
+    display: flex;
+    justify-content: center;
+    margin: 2vh 0;
+}
+
+.media-items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.media-links {
+    display: flex;
+    margin-bottom: 10px;
+    gap: 45px;
+}
+
+.media-item img {
+    width: 20px;
+    height: 20px;
+}
+
+.media p {
+    font-size: 12px;
+}
+
+.margin-top {
+    margin-top: 190px;
+}
+
+/*  @media запросы  */
+/*
+    -.-.-.-.-.-.-.-
+*/
+
+@media (max-width: 1230px) {
+
+    .card {
+        height: 80vh;
+        width: calc(50% - 8vh);
+        font-size: 1.7vh;
+    }
+
+    .img-container {
+        width: 100%;
+        height: 65%;
+        margin-bottom: 15px;
+    }
+
+    .card img {
+        max-width: 100%;
+        height: 100%;
+    }
+
+    .card p, .card b {
+        margin: 1vh 0;
+    }
+
+    .title {
+        font-size: 26px;
+    }
+    
+    .price {
+        font-size: 20px;
+    }
+
+    .btn-cart {
+        margin-top: 1vh;
+        padding: 10px;
+        width: 100%;
+        height: 8vh;
+        font-size: 20px;
+    }
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        padding: 2.2vh 0;
+    }
+
+    .promo {
+        height: 60vh;
+    }
+
+    .promo-content {
+        padding: 3%;
+        margin-left: 8vh;
+    }
+    
+    .contacts-div {
+        flex-direction: column;
+        margin: 8vh 0;
+        width: 85%;
+        height: 835px;
+        gap: 30px;
+    }
+
+    .frame {
+        width: 510px;
+        height: 415px;
+    }
+    
+    .hand img {
+        width: 270px;
+        height: 420px;
+        margin: 38px 58px;
+    }
+    
+    .team {
+        width: 95%;
+        font-size: 3vh;
+    }
+    
+    .team h2,
+    .team p {
+        margin-top: 0.5vh;
+    }
+
+    .footer {
+        max-height: 160px;
+        padding: 20px 80px;
+    }
+    
+    .workshop {
+        font-size: 18px;
+    }
+    
+    .phone {
+        font-size: 18px;
+    }
+    
+    .info-elements {
+        gap: 45px;
+    }
+    
+    .info-item a {
+        font-size: 18px;
+    }
+    
+    .info-item li {
+        font-size: 16px;
+    }
+    
+    .media-links {
+        gap: 37px;
+    }
+    
+    .media-item img {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .nav {
+        height: 80px;
+        margin: 0 65px;
+    }
+
+    .nav ul {
+        gap: 55px;
+    }
+
+    .hero-img img {
+        max-width: 330px;
+        max-height: 410px;
+    }
+
+    .hero-text {
+        max-width: 330px;
+        max-height: 410px;
+    }
+
+    .hero-text h1 {
+        font-size: 5vh;
+    }
+
+    .hero-text p {
+        margin-bottom: 5vh;
+    }
+
+    .container {
+        width: 87%;
+        padding: 1.5vh 0;
+    }
+
+    .img-container {
+        height: 70%;
+        margin-bottom: 5px;
+    }
+    
+    .card p, .card b {
+        margin: 0.5vh 0;
+    }
+
+    .card-ul {
+        gap: 13px;
+    }
+    
+    .card {
+        width: calc(50% - 5vh);
+        font-size: 1.5vh;
+        height: 70vh;
+    }
+    
+    .card img {
+        max-width: 100%;
+        height: 100%;
+    }
+    
+    .title {
+        font-size: 24px;
+    }
+    
+    .price {
+        font-size: 24px;
+    }
+    
+    .btn-cart {
+        margin-top: 0.5vh;
+        padding: 10px;
+        width: 100%;
+        height: 8vh;
+        font-size: 20px;
+    }
+
+    .promo {
+        height: 60vh;
+    }
+    
+    .promo-content {
+        padding: 3%;
+        margin-left: 5vh;
+    }
+    
+    .promo-btn {
+        margin-top: 3vh;
+    }
+    
+    .hand img {
+        margin: 39px 58px;
+    }
+    
+    .team {
+        font-size: 2.5vh;
+    }
+
+    .footer {
+        max-height: 140px;
+        padding: 15px 15px;
+    }
+
+    .flogo {
+        gap: 6px;
+    }
+    
+    .flogo img {
+        height: 25px;
+        width: 25px;
+    }
+    
+    .foot-logo {
+        font-size: 16px;
+    }
+    
+    .workshop {
+        font-size: 14px;
+    }
+    
+    .phone {
+        font-size: 18px;
+    }
+    
+    .info-elements {
+        justify-content: flex-start;
+        gap: 30px;
+    }
+    
+    .info-item a {
+        font-size: 16px;
+    }
+    
+    .info-item li {
+        font-size: 14px;
+    }
+    
+    .media-links {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .nav {
+        height: 70px;
+        margin: 0 30px;
+    }
+
+    .nav ul {
+        gap: 30px;
+    }
+
+    .logo img {
+        height: 30px;
+        width: 30px;
+    }
+    
+    .logo p {
+        font-size: 18px;
+    }
+
+    .hero-img img {
+        max-width: 300px;
+        max-height: 380px;
+    }
+
+    .hero-text {
+        max-width: 300px;
+        max-height: 380px;
+    }
+
+    .hero-text h1 {
+        font-size: 3vh;
+    }
+
+    .hero-text p {
+        font-size: 1.5vh;
+        margin-bottom: 3vh;
+    }
+
+    .c-btn-item {
+        padding: 10px 20px;
+        border-radius: 20px;
+    }
+
+    .card {
+        height: 65vh;
+    }
+
+    .container {
+        width: 95%;
+        margin: 0 auto;
+        padding: 1.5vh 0;
+    }
+
+    .img-container {
+        height: 65%;
+        margin-bottom: 5px;
+    }
+
+    .card p, .card b {
+        margin: 0.7vh 0;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+    
+    .price {
+        font-size: 18px;
+    }
+
+    .btn-cart {
+        padding: 8px;
+        height: 6vh;
+    }
+
+    .catalog-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .promo {
+        height: 55vh;
+    }
+    
+    .promo-content {
+        padding: 1.5%;
+        margin-left: 3vh;
+    }
+    
+    .promo-name {
+        max-width: 450px;
+    }
+    
+    .promo-name img {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .promo h2 {
+        font-size: 3vh;
+        margin-left: 1vh;
+        margin-bottom: 2vh;
+    }
+    
+    .promo p {
+        font-size: 1.8vh;
+        margin-bottom: 3vh;
+        max-width: 350px;
+    }
+    
+    .promo-btn {
+        min-width: 190px;
+    }
+
+    .contacts-div {
+        margin: 6vh 0;
+        height: 660px;
+        gap: 15px;
+    }
+
+    .frame {
+        width: 410px;
+        height: 330px;
+    }
+    
+    .hand img {
+        width: 230px;
+        height: 330px;
+        margin: 31px 46px;
+    }
+    
+    .team {
+        width: 95%;
+        font-size: 2vh;
+    }
+    
+    .team h2,
+    .team p {
+        margin-top: 0.5vh;
+    }
+    
+    .team h2 {
+        font-size: 3vh;
+    }
+    
+    .team-members {
+        margin-top: 1vh;
+        gap: 4vh;
+        max-width: 75vh;
+    }
+    
+    .member {
+        width: 8vh;
+        height: 8vh;
+    }
+
+    .footer {
+        max-height: 230px;
+        grid-template-rows: auto auto;
+        grid-template-columns: 3fr 1fr;
+        padding: 20px;
+        gap: 0;
+    }
+
+    .info, .media {
+        grid-row: 2 / 3;
+    }
+
+    .footer-logo {
+        grid-row: 1 / 2;
+        grid-column: 1 / 3;
+        flex-direction: row;
+        margin-bottom: 10px;
+    }
+    
+    .flogo {
+        gap: 8px;
+    }
+    
+    .flogo img {
+        height: 35px;
+        width: 35px;
+    }
+    
+    .foot-logo {
+        font-size: 20px;
+    }
+    
+    .workshop {
+        text-align: end;
+        font-size: 18px;
+    }
+    
+    .phone {
+        font-size: 20px;
+    }
+    
+    .info {
+        flex-direction: column;
+    }
+    
+    .info-elements {
+        gap: 25px;
+    }
+    
+    .info-item a {
+        font-size: 20px;
+    }
+    
+    .info-item li {
+        font-size: 18px;
+    }
+    
+    .media {
+        justify-content: flex-end;
+        margin: 0;
+    }
+    
+    .media-items {
+        align-items: flex-end;
+    }
+    
+    .media-links {
+        margin-bottom: 5px;
+        gap: 45px;
+    }
+    
+    .media-item img {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .media p {
+        text-align: end;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 570px) {
+
+    .nav {
+        flex-direction: column;
+        height: 100px;
+        margin: 0 15px;
+    }
+    
+    .nav ul {
+        gap: 40px;
+        margin: 0 0 5px 0;
+    }
+    
+    .logo img {
+        height: 35px;
+        width: 35px;
+    }
+    
+    .logo p {
+        color: var(--color1);
+        font-size: 20px;
+        line-height: 35px;
+        margin: 0;
+    }
+    
+    .logo {
+        margin-top: 7px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        border-bottom: 1px solid rgba(44, 45, 53, 0.2);
+        padding-bottom: 5px;
+        width: 100%;
+    }
+
+    .hero-img img {
+        max-width: 200px;
+        max-height: 270px;
+    }
+
+    .hero-text {
+        max-width: 200px;
+        max-height: 250px;
+    }
+
+    .hero-text h1 {
+        font-size: 3vh;
+        margin-bottom: 1.5vh;
+    }
+
+    .hero-text p {
+        font-size: 1.5vh;
+        margin-bottom: 2vh;
+    }
+
+    .hero-btn {
+        padding: 1vh 4vh;
+        font-size: 2vh;
+    }
+
+    .catalog-container {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 90%;
+        padding: 10px;
+    }
+
+    .catalog-text {
+        margin-bottom: 15px;
+    }
+
+    .card {
+        height: 50vh;
+        width: calc(50% - 3vh);
+        font-size: 1.5vh;
+    }
+
+    .container {
+        width: 98%;
+        padding: 1vh 0;
+    }
+
+    .img-container {
+        margin-bottom: 3px;
+    }
+
+    .card p, .card b {
+        margin: 0.5vh 0;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+    
+    .price {
+        font-size: 15px;
+    }
+
+    .btn-cart {
+        padding: 8px;
+        height: 4vh;
+        font-size: 18px;
+    }
+
+    .promo {
+        margin-top: 3vh;
+        height: 55vh;
+        background-position: 75% center;
+    }
+    
+    .promo-content {
+        padding: 1%;
+        margin-left: 3vh;
+    }
+    
+    .promo-name {
+        max-width: 350px;
+    }
+    
+    .promo-name img {
+        width: 45px;
+        height: 45px;
+        border: 2px 0px 0px 0px;
+    }
+    
+    .promo h2 {
+        font-size: 2.5vh;
+        margin-left: 1vh;
+        margin-bottom: 2vh;
+    }
+    
+    .promo p {
+        font-size: 1.8vh;
+        margin-bottom: 1vh;
+        max-width: 325px;
+    }
+    
+    .promo-btn {
+        margin-top: 5vh;
+        font-size: 2vh;
+        min-width: 125px;
+    }
+
+    .contacts-div {
+        margin: 3vh 0;
+        height: 600px;
+    }
+
+    .frame {
+        width: 350px;
+        height: 290px;
+    }
+    
+    .hand img {
+        width: 180px;
+        height: 270px;
+        margin: 27px 40px;
+    }
+
+    .footer {
+        max-height: 300px;
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 1fr;
+    }
+
+    .flogo {
+        margin-bottom: 10px;
+    }
+
+    .workshop {
+        font-size: 16px;
+    }
+
+    .phone {
+        font-size: 18px;
+    }
+
+    .info {
+        grid-row: 2 / 3;
+        display: grid;
+        grid-template-rows: 1fr;
+    }
+
+    .info-elements {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        border-bottom: 1px solid rgba(44, 45, 53, 0.2);
+        margin-bottom: 15px;
+    }
+
+    .info-item a {
+        font-size: 18px;
+    }
+
+    .info-item a {
+        font-size: 16px;
+    }
+
+    .info-item:nth-child(2) {
+        text-align: left;
+        justify-self: center;
+    }
+
+    .info-item:nth-child(3) {
+        text-align: left;
+        justify-self: end;
+    }
+
+    .media {
+        grid-row: 3 / 4;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .media-items {
+        align-items: center;
+        gap: 0;
+    }
+
+    .media-links {
+        gap: 30px;
+        margin-bottom: 0;
+    }
+
+    .gray .hidden-br {
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .nav {
+        height: 130px;
+        margin: 0;
+        position: relative;
+    }
+    
+    .nav ul {
+        gap: 30px;
+        margin-bottom: 0 0 5px 0;
+        display: none;
+    }
+
+    .burger:checked ~ .menu {
+        display: block;
+    }
+
+    .menu {
+        position: absolute;
+        flex-direction: column;
+        background-color: rgba(225, 237, 230, 1);
+        align-self: flex-start;
+        width: 100%;
+        top: 100%;
+    }
+
+    .menu.active {
+        display: flex;
+        animation: slideDown 0.3s ease-in-out;
+    }
+
+    .burger-menu {
+        padding: 24px 0 20px 0;
+        width: 95%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .burger {
+        display: block;
+        background: none;
+        border: none;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    .cross {
+        display: block;
+        background: none;
+        border: none;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    .cross img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .menu-item {
+        margin: 15px;
+    }
+
+    .menu-cart {
+        margin: 15px;
+    }
+    
+    .logo {
+        margin-top: 0;
+        background-color: #fff;
+        border-bottom: 1px solid #fff;
+        padding-bottom: 0;
+        height: 70px;
+    }
+
+    .hero-img {
+        display: none;
+    }
+
+    .hero-text {
+        max-width: 400px;
+        max-height: 250px;
+        margin: 50px 15px;
+    }
+
+    .hero-text h1 {
+        font-size: 3.3vh;
+        font-weight: 500;
+        margin-bottom: 0;
+    }
+
+    .hero-text p {
+        font-size: 1.8vh;
+        margin: 4vh 0;
+    }
+
+    .hero-btn {
+        padding: 1.8vh 5vh;
+        font-size: 2.2vh;
+    }
+
+    .catalog-container {
+        display: flex;
+        width: 80%;
+        padding: 20px;
+        background-color: #fff;
+        margin: 0 auto;
+    }
+
+    .catalog-text {
+        margin: 0 0 20px 0;
+    }
+
+    .catalog-btn {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .card {
+        width: calc(100% - 6vh);
+    }
+
+    .btn-cart {
+        font-weight: 500;
+    }
+
+    .promo {
+        margin: 6vh 0;
+        height: 62vh;
+    }
+    
+    .promo h2 {
+        font-size: 2.4vh;
+    }
+
+    .promo p {
+        max-width: 250px;
+        margin-bottom: 0;
+    }
+
+    .promo-btn {
+        margin-top: 3.5vh;
+        padding: 2vh 4vh;
+        font-size: 2vh;
+    }
+
+    .contacts-div {
+        margin: 3vh 0;
+        height: 550px;
+    }
+
+    .frame {
+        width: 240px;
+    }
+    
+    .hand img {
+        width: 120px;
+        height: 210px;
+        margin: 18px 27px;
+    }
+
+    .team {
+        font-size: 1.8vh;
+    }
+
+    .footer {
+        display: grid;
+        max-height: 440px;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        background-color: #d9e7d6;
+    }
+    
+    .footer-logo {
+        grid-row: 1 / 3;
+        grid-column: 1 / 2;
+        display: contents;
+    }
+
+    .flogo img {
+        height: 35px;
+        width: 35px;
+    }
+
+    .flogo {
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+        margin-bottom: 0;
+    }
+
+    .foot-logo {
+        font-size: 22px;
+    }
+
+    .workshop {
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+        font-size: 16px;
+        justify-content: flex-start;
+        text-align: start;
+    }
+    
+    .phone {
+        font-size: 18px;
+    }
+    
+    .info {
+        display: contents;
+    }
+    
+    .info-elements {
+        display: contents;
+        border-bottom: none;
+        margin-bottom: 5px;
+    }
+
+    .info-item a {
+        font-size: 18px;
+    }
+    
+    .info-item:nth-child(1) {
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
+    }
+    
+    .info-item:nth-child(2) {
+        grid-row: 3 / 4;
+        grid-column: 1 / 2;
+        justify-self: flex-start;
+    }
+    
+    .info-item:nth-child(3) {
+        grid-row: 3 / 4;
+        grid-column: 2 / 3;
+        justify-self: flex-start;
+    }
+    
+    .media {
+        border-top: 1px solid rgba(44, 45, 53, 0.2);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-row: 4 / 5;
+        grid-column: 1 / 3;
+        gap: 10px;
+    }
+    
+    .media-items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .team-members {
+        gap: 3vh;
+    }
+
+    .team-members img {
+        width: 8vh;
+        height: 8vh;
+    }
+    
+    .media-links {
+        display: flex;
+        gap: 15px;
+    }
+    
+    .gray {
+        font-size: 14px;
+    }
+}
+
+@keyframes slideDown {
+    from {
+    height: 0;
+    opacity: 0;
+    }
+    to {
+    height: auto;
+    opacity: 1;
+    }
+}
