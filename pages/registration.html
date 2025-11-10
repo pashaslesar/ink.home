@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Ink. House</title>
+        <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+        <header class="header">
+        <nav class="nav">
+            <div class="logo">
+            <a href="../index.html"><img src="../images/header/star.svg" alt="star"/></a>
+            <p>Ink. House</p>
+            </div>
+            <div class="burger-menu">
+            <button class="burger" id="burger"><img src="../images/header/burger.png" alt="burger icon"/></button>
+            <button class="cross visually-hidden" id="cross"><img src="../images/header/cross.svg" alt="cross icon"/></button>
+            </div>
+            <ul class="menu" id="main-menu">
+            <li><a href="registration.html" class="menu-item">Registrace</a></li>
+            <li><a href="../index.html#promo" class="menu-item">Novinky</a></li>
+            <li><a href="../index.html#contacts" class="menu-item">O nás</a></li>
+            <li>
+                <a href="cart.html">
+                <div class="cart menu-cart">
+                    <img src="../images/header/cartdefault.svg" class="cart-icon" id="cart-icon" alt="cart"/>
+                </div>
+                </a>
+            </li>
+            </ul>
+        </nav>
+        </header>
+        <main>
+        <section class="auth-hero">
+            <div class="hero-copy">
+            <h1>Vítejte v <span style="color:rgba(89,141,102,1)">Ink. House</span></h1>
+            <p>
+                Vytvořte si účet a spravujte objednávky, oblíbené obrazy i doručovací adresy. Pokud už účet máte,
+                jednoduše se přihlaste.
+            </p>
+            </div>
+            <div class="hero-art">
+            <img src="../images/hero/birdhero.png" alt="Ink House bird"/>
+            </div>
+        </section>
+        <section class="auth-wrap">
+            <div class="auth-panels">
+            <form class="auth-card login-grid" id="panel-login" role="tabpanel" aria-labelledby="tab-login" novalidate>
+                <h2>Přihlášení</h2>
+                <div class="form-col full">
+                <label for="login-user">E-mail nebo přihlašovací jméno</label>
+                <input id="login-user" name="login" type="text" autocomplete="username" required placeholder="např. jana.novakova@example.cz"/>
+                </div>
+                <div class="form-col full">
+                <label for="login-pass">Heslo</label>
+                <input id="login-pass" name="password" type="password" autocomplete="current-password" required/>
+                </div>
+                <div class="form-col full">
+                <div class="auth-actions">
+                    <button type="submit" class="btn-primary">Přihlásit se</button>
+                    <a href="#" class="muted-link">Zapomenuté heslo?</a>
+                </div>
+                </div>
+            </form>
+            <form class="auth-card" id="panel-register" role="tabpanel" aria-labelledby="tab-register" hidden novalidate>
+                <h2>Registrace</h2>
+                <div class="form-row">
+                <div class="form-col">
+                    <label for="first-name">Jméno</label>
+                    <input id="first-name" name="firstName" type="text" placeholder="Jana" required/>
+                </div>
+                <div class="form-col">
+                    <label for="last-name">Příjmení</label>
+                    <input id="last-name" name="lastName" type="text" placeholder="Nováková" required/>
+                </div>
+                </div>
+                <div class="form-row">
+                <div class="form-col">
+                    <label for="email">E-mail</label>
+                    <input id="email" name="email" type="email" placeholder="jana.novakova@example.cz" required/>
+                </div>
+                <div class="form-col">
+                    <label for="phone">Telefon</label>
+                    <input id="phone" name="phone" type="tel" inputmode="tel" placeholder="+420 602 123 456" pattern="^(\+?420)?\s?\d{3}\s?\d{3}\s?\d{3}$"/>
+                    <div class="form-help">Formát: +420 602 123 456</div>
+                </div>
+                </div>
+                <div class="form-row">
+                <div class="form-col">
+                    <label for="gender">Pohlaví</label>
+                    <select id="gender" name="gender">
+                    <option value="" selected>neuvádět</option>
+                    <option value="F">Žena</option>
+                    <option value="M">Muž</option>
+                    <option value="X">Jiné</option>
+                    </select>
+                </div>
+                <div class="form-col">
+                    <label for="username">Přihlašovací jméno</label>
+                    <input id="username" name="username" type="text" autocomplete="username" required/>
+                </div>
+                </div>
+                <div class="form-row">
+                <div class="form-col">
+                    <label for="password">Heslo</label>
+                    <input id="password" name="password" type="password" autocomplete="new-password" minlength="6" required/>
+                    <div class="form-help">Minimálně 6 znaků.</div>
+                </div>
+                <div class="form-col">
+                    <label for="password2">Potvrzení hesla</label>
+                    <input id="password2" name="password2" type="password" autocomplete="new-password" minlength="6" required/>
+                    <div class="form-error" id="pass-error">Hesla se neshodují.</div>
+                </div>
+                </div>
+                <div class="form-row">
+                <div class="form-col">
+                    <label for="avatar">Profilová fotka (volitelné)</label>
+                    <input id="avatar" name="avatar" type="file" accept="image/*"/>
+                </div>
+                <div class="form-col">
+                    <label>&nbsp;</label>
+                    <div class="agree-line">
+                    <input id="agree" name="agree" type="checkbox" required/>
+                    <label for="agree">Souhlasím se zpracováním osobních údajů a <a href="#" class="muted-link">obchodními podmínkami</a>.</label>
+                    </div>
+                </div>
+                </div>
+                <div class="divider"></div>
+                <div class="form-col full">
+                <div class="auth-actions">
+                    <button type="submit" class="btn-primary">Registrovat se</button>
+                    <span class="form-help">Účet už máte? <a href="#" class="muted-link" data-switch-to="login">Přihlásit se</a></span>
+                </div>
+                </div>
+            </form>
+            </div>
+        </section>
+        </main>
+        <footer class="footer">
+        <div class="footer-logo">
+            <div class="flogo">
+            <a href="#"><img src="../images/header/star.svg" alt="star"/></a>
+            <p class="foot-logo">Ink. House</p>
+            </div>
+            <div class="workshop">
+            <a href="tel:+420602123456" class="phone">+420 602 123 456</a>
+            <p class="gray">Dílna</p>
+            </div>
+        </div>
+        <div class="info">
+            <p class="visually-hidden">Další informace</p>
+            <div class="info-elements">
+            <div class="info-item">
+                <a href="../index.html#catalog">Reprodukce</a>
+                <ul>
+                <li><p class="gray">Francie</p></li>
+                <li><p class="gray">Německo</p></li>
+                <li><p class="gray">Anglie</p></li>
+                </ul>
+            </div>
+            <div class="info-item">
+                <a href="../index.html#promo">Novinky</a>
+                <ul>
+                <li><p class="gray">2021</p></li>
+                <li><p class="gray">2020</p></li>
+                </ul>
+            </div>
+            <div class="info-item">
+                <a href="../index.html#contacts">O nás</a>
+                <ul>
+                <li><p class="gray">Umělci</p></li>
+                <li><p class="gray">Manažeři</p></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        <div class="media">
+            <p class="visually-hidden">Odkazy na sociální sítě</p>
+            <div class="media-items">
+            <div class="media-links">
+                <a href="#" class="media-item"><img src="../images/footer/facebookdefault.svg" alt="Facebook"/></a>
+                <a href="#" class="media-item"><img src="../images/footer/instadefault.svg" alt="Instagram"/></a>
+                <a href="#" class="media-item"><img src="../images/footer/youtubedefault.svg" alt="YouTube"/></a>
+            </div>
+            <p class="gray">Ink. House ®<span class="hidden-br"><br /></span>All rights reserved</p>
+            </div>
+        </div>
+        </footer>
+    </body>
+</html>

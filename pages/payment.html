@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="../styles/style.css"/>
+        <title>Ink. House</title>
+    </head>
+    <body>
+        <header class="header">
+        <nav class="nav">
+            <div class="logo">
+            <a href="../index.html"><img src="../images/header/star.svg" alt="star"/></a>
+            <p>Ink. House</p>
+            </div>
+            <div class="burger-menu">
+            <button class="burger" aria-hidden="true"><img src="../images/header/burger.png" alt=""/></button>
+            <button class="cross visually-hidden" aria-hidden="true"><img src="../images/header/cross.svg" alt=""/></button>
+            </div>
+            <ul class="menu" id="main-menu">
+            <li><a href="registration.html" class="menu-item">Registrace</a></li>
+            <li><a href="../index.html#promo" class="menu-item">Novinky</a></li>
+            <li><a href="../index.html#contacts" class="menu-item">O nás</a></li>
+            <li>
+                <a href="cart.html">
+                <div class="cart menu-cart">
+                    <img src="../images/header/cartdefault.svg" class="cart-icon" alt="cart"/>
+                </div>
+                </a>
+            </li>
+            </ul>
+        </nav>
+        </header>
+        <main>
+        <section class="checkout-hero">
+            <h1>Platba objednávky</h1>
+        </section>
+        <section class="checkout-wrap">
+            <div class="checkout-grid">
+            <form class="checkout-form" novalidate>
+                <section class="form-section">
+                <h2>Kontaktní údaje</h2>
+                <div class="field-row two">
+                    <label class="field">
+                    <span>Jméno</span>
+                    <input type="text" placeholder="Jana"/>
+                    </label>
+                    <label class="field">
+                    <span>Příjmení</span>
+                    <input type="text" placeholder="Nováková"/>
+                    </label>
+                </div>
+                <div class="field-row two">
+                    <label class="field">
+                    <span>E-mail</span>
+                    <input type="email" placeholder="jana.novakova@gmail.com"/>
+                    </label>
+                    <label class="field">
+                    <span>Telefon</span>
+                    <input type="tel" placeholder="+420 602 123 456"/>
+                    </label>
+                </div>
+                </section>
+                <section class="form-section">
+                <h2>Doručovací adresa</h2>
+                <div class="field-row full">
+                    <label class="field">
+                    <span>Ulice a číslo</span>
+                    <input type="text" placeholder="U Lesa 12"/>
+                    </label>
+                </div>
+                <div class="field-row three">
+                    <label class="field">
+                    <span>Město</span>
+                    <input type="text" placeholder="Praha"/>
+                    </label>
+                    <label class="field">
+                    <span>PSČ</span>
+                    <input type="text" placeholder="110 00"/>
+                    </label>
+                    <label class="field">
+                    <span>Stát</span>
+                    <select>
+                        <option value="">Česká republika</option>
+                        <option>Slovensko</option>
+                        <option>Polsko</option>
+                    </select>
+                    </label>
+                </div>
+                <label class="checkbox-line">
+                    <input type="checkbox"/>
+                    <span>Fakturační adresa je stejná</span>
+                </label>
+                </section>
+                <section class="form-section">
+                <h2>Způsob doručení</h2>
+                <div class="card-choice">
+                    <label class="radio-card">
+                    <input type="radio" name="delivery" checked/>
+                    <div class="rc-body">
+                        <b>Kurier (domů)</b>
+                        <span class="muted">1-2 pracovní dny</span>
+                        <span class="price-tag">120 Kč</span>
+                    </div>
+                    </label>
+                    <label class="radio-card">
+                    <input type="radio" name="delivery"/>
+                    <div class="rc-body">
+                        <b>Výdejní místo</b>
+                        <span class="muted">2-3 pracovní dny</span>
+                        <span class="price-tag">79 Kč</span>
+                    </div>
+                    </label>
+                    <label class="radio-card">
+                    <input type="radio" name="delivery"/>
+                    <div class="rc-body">
+                        <b>Osobní odběr</b>
+                        <span class="muted">Zítra po 14:00</span>
+                        <span class="price-tag">Zdarma</span>
+                    </div>
+                    </label>
+                </div>
+                </section>
+                <section class="form-section">
+                <h2>Způsob platby</h2>
+                <div class="card-choice">
+                    <label class="radio-card">
+                    <input type="radio" name="payment" checked/>
+                    <div class="rc-body">
+                        <b>Platební karta</b>
+                        <span class="muted">Visa, Mastercard</span>
+                    </div>
+                    </label>
+                    <label class="radio-card">
+                    <input type="radio" name="payment"/>
+                    <div class="rc-body">
+                        <b>Bankovní převod</b>
+                        <span class="muted">Proforma faktura</span>
+                    </div>
+                    </label>
+                    <label class="radio-card">
+                    <input type="radio" name="payment"/>
+                    <div class="rc-body">
+                        <b>Dobírka</b>
+                        <span class="muted">Platba při převzetí</span>
+                    </div>
+                    </label>
+                </div>
+                </section>
+                <section class="form-section">
+                <h2>Poznámka k objednávce</h2>
+                <label class="field">
+                    <span class="visually-hidden">Poznámka</span>
+                    <textarea rows="4" placeholder="Např.: doručit po 17:00, patře bez výtahu apod."></textarea>
+                </label>
+                </section>
+                <p class="gray" style="margin-top:6px;">Odesláním souhlasíte se zpracováním osobních údajů dle zásad ochrany osobních údajů.</p>
+            </form>
+            <aside class="checkout-summary" aria-labelledby="checkout-summary-title">
+                <h2 id="checkout-summary-title">Souhrn objednávky</h2>
+                <dl class="sum-rows">
+                <div class="sum-row">
+                    <dt>Mezisoučet</dt>
+                    <dd>31 000 Kč</dd>
+                </div>
+                <div class="sum-row">
+                    <dt>Doprava</dt>
+                    <dd>-</dd>
+                </div>
+                <div class="sum-row">
+                    <dt>Sleva</dt>
+                    <dd>-</dd>
+                </div>
+                </dl>
+                <div class="sum-total">
+                <span>Celkem</span>
+                <strong>31 000 Kč</strong>
+                </div>
+                <a class="btn-primary" href="#" role="button">Zaplatit a dokončit</a>
+                <a class="muted-link" href="cart.html">Zpět do košíku</a>
+            </aside>
+            </div>
+        </section>
+        </main>
+        <footer class="footer">
+        <div class="footer-logo">
+            <div class="flogo">
+            <a href="#"><img src="../images/header/star.svg" alt="star" /></a>
+            <p class="foot-logo">Ink. House</p>
+            </div>
+            <div class="workshop">
+            <a href="tel:+420602123456" class="phone">+420 602 123 456</a>
+            <p class="gray">Dílna</p>
+            </div>
+        </div>
+        <div class="info">
+            <p class="visually-hidden">Další informace</p>
+            <div class="info-elements">
+            <div class="info-item">
+                <a href="../index.html#catalog">Reprodukce</a>
+                <ul>
+                <li><p class="gray">Francie</p></li>
+                <li><p class="gray">Německo</p></li>
+                <li><p class="gray">Anglie</p></li>
+                </ul>
+            </div>
+            <div class="info-item">
+                <a href="../index.html#promo">Novinky</a>
+                <ul>
+                <li><p class="gray">2021</p></li>
+                <li><p class="gray">2020</p></li>
+                </ul>
+            </div>
+            <div class="info-item">
+                <a href="../index.html#contacts">O nás</a>
+                <ul>
+                <li><p class="gray">Umělci</p></li>
+                <li><p class="gray">Manažeři</p></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        <div class="media">
+            <p class="visually-hidden">Odkazy na sociální sítě</p>
+            <div class="media-items">
+            <div class="media-links">
+                <a href="#" class="media-item"><img src="../images/footer/facebookdefault.svg" alt="Facebook"/></a>
+                <a href="#" class="media-item"><img src="../images/footer/instadefault.svg" alt="Instagram"/></a>
+                <a href="#" class="media-item"><img src="../images/footer/youtubedefault.svg" alt="YouTube"/></a>
+            </div>
+            <p class="gray">Ink. House ®<span class="hidden-br"><br /></span>All rights reserved</p>
+            </div>
+        </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="../styles/style.css"/>
+    <title>Ink. House</title>
+    </head>
+    <body>
+        <header class="header">
+            <nav class="nav">
+                <div class="logo">
+                <a href="../index.html"><img src="../images/header/star.svg" alt="star"/></a>
+                <p>Ink. House</p>
+                </div>
+                <div class="burger-menu">
+                <button class="burger" aria-hidden="true"><img src="../images/header/burger.png" alt=""/></button>
+                <button class="cross visually-hidden" aria-hidden="true"><img src="../images/header/cross.svg" alt=""/></button>
+                </div>
+                <ul class="menu" id="main-menu">
+                <li><a href="registration.html" class="menu-item">Registrace</a></li>
+                <li><a href="../index.html#promo" class="menu-item">Novinky</a></li>
+                <li><a href="../index.html#contacts" class="menu-item">O nás</a></li>
+                <li>
+                    <a href="cart.html">
+                    <div class="cart menu-cart">
+                        <img src="../images/header/cartdefault.svg" class="cart-icon" alt="cart"/>
+                    </div>
+                    </a>
+                </li>
+                </ul>
+            </nav>
+        </header>
+    <main>
+        <section class="cart-hero">
+            <h1>Váš košík</h1>
+        </section>
+        <section class="cart-wrap">
+            <div class="cart-grid">
+            <div class="cart-list" role="table" aria-label="Seznam položek v košíku">
+                <article class="cart-item" role="row">
+                <div class="ci-media" role="cell">
+                    <img src="../images/catalog/france/amour.jpg" alt="Amour"/>
+                </div>
+                <div class="ci-info" role="cell">
+                    <h3>Amour</h3>
+                    <p class="author">Marcel Russo</p>
+                    <p class="description">Plátno, olej (50x80)</p>
+                </div>
+                <div class="ci-price" role="cell">
+                    <span class="label">Cena</span>
+                    <b>14 500 Kč</b>
+                </div>
+                <div class="ci-qty" role="cell" aria-label="Množství">
+                    <span class="qty-btn" aria-hidden="true">-</span>
+                    <span class="qty-val">1</span>
+                    <span class="qty-btn" aria-hidden="true">+</span>
+                </div>
+                <div class="ci-sum" role="cell">
+                    <span class="label">Mezisoučet</span>
+                    <b>14 500 Kč</b>
+                </div>
+                </article>
+                <article class="cart-item" role="row">
+                <div class="ci-media" role="cell">
+                    <img src="../images/catalog/france/dog.jpg" alt="Dáma se psem"/>
+                </div>
+                <div class="ci-info" role="cell">
+                    <h3>Dáma se psem</h3>
+                    <p class="author">Henri Selin</p>
+                    <p class="description">Akryl, papír (50x80)</p>
+                </div>
+                <div class="ci-price" role="cell">
+                    <span class="label">Cena</span>
+                    <b>16 500 Kč</b>
+                </div>
+                <div class="ci-qty" role="cell">
+                    <span class="qty-btn" aria-hidden="true">-</span>
+                    <span class="qty-val">1</span>
+                    <span class="qty-btn" aria-hidden="true">+</span>
+                </div>
+                <div class="ci-sum" role="cell">
+                    <span class="label">Mezisoučet</span>
+                    <b>16 500 Kč</b>
+                </div>
+                </article>
+            </div>
+            <aside class="cart-summary" aria-labelledby="cart-summary-title">
+                <h2 id="cart-summary-title">Souhrn objednávky</h2>
+                <dl class="sum-rows">
+                <div class="sum-row">
+                    <dt>Mezisoučet</dt>
+                    <dd>31 000 Kč</dd>
+                </div>
+                <div class="sum-row">
+                    <dt>Doprava</dt>
+                    <dd>-</dd>
+                </div>
+                <div class="sum-row">
+                    <dt>Sleva</dt>
+                    <dd>-</dd>
+                </div>
+                </dl>
+                <div class="sum-total">
+                <span>Celkem</span>
+                <strong>31 000 Kč</strong>
+                </div>
+                <div class="promo-block" aria-label="Slevový kód (nefunkční)">
+                <label for="promo" class="visually-hidden">Slevový kód</label>
+                <input id="promo" type="text" placeholder="Slevový kód"/>
+                <button class="btn-primary" type="button">Použít</button>
+                </div>
+                <div class="checkout-actions">
+                <a class="btn-primary" href="payment.html" role="button">Pokračovat k objednávce</a>
+                <a class="muted-link" href="../index.html#catalog">Pokračovat v nákupu</a>
+                </div>
+            </aside>
+            </div>
+            <div class="cart-empty" aria-hidden="true">
+            <img src="../images/hero/birdhero.png" alt=""/>
+            <h2>Váš košík je prázdný</h2>
+            <p class="gray">Prohlédněte si naši kolekci a přidejte si obrazy do košíku.</p>
+            <a class="btn-primary" href="../index.html#catalog">Do katalogu</a>
+            </div>
+        </section>
+        </main>
+        <footer class="footer">
+        <div class="footer-logo">
+            <div class="flogo">
+            <a href="#"><img src="../images/header/star.svg" alt="star"/></a>
+            <p class="foot-logo">Ink. House</p>
+            </div>
+            <div class="workshop">
+            <a href="tel:+420602123456" class="phone">+420 602 123 456</a>
+            <p class="gray">Dílna</p>
+            </div>
+        </div>
+        <div class="info">
+            <p class="visually-hidden">Další informace</p>
+            <div class="info-elements">
+            <div class="info-item">
+                <a href="../index.html#catalog">Reprodukce</a>
+                <ul>
+                <li><p class="gray">Francie</p></li>
+                <li><p class="gray">Německo</p></li>
+                <li><p class="gray">Anglie</p></li>
+                </ul>
+            </div>
+            <div class="info-item">
+                <a href="../index.html#promo">Novinky</a>
+                <ul>
+                <li><p class="gray">2021</p></li>
+                <li><p class="gray">2020</p></li>
+                </ul>
+            </div>
+            <div class="info-item">
+                <a href="../index.html#contacts">O nás</a>
+                <ul>
+                <li><p class="gray">Umělci</p></li>
+                <li><p class="gray">Manažeři</p></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        <div class="media">
+            <p class="visually-hidden">Odkazy na sociální sítě</p>
+            <div class="media-items">
+            <div class="media-links">
+                <a href="#" class="media-item"><img src="../images/footer/facebookdefault.svg" alt="Facebook"/></a>
+                <a href="#" class="media-item"><img src="../images/footer/instadefault.svg" alt="Instagram"/></a>
+                <a href="#" class="media-item"><img src="../images/footer/youtubedefault.svg" alt="YouTube"/></a>
+            </div>
+            <p class="gray">Ink. House ®<span class="hidden-br"><br/></span>All rights reserved</p>
+            </div>
+        </div>
+        </footer>
+    </body>
+</html>

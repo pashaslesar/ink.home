@@ -1,0 +1,134 @@
+const artworks = {
+        france: [
+            {
+                img: 'images/catalog/france/amour.jpg',
+                author: 'Marcel Russo',
+                title: 'Lov Amora',
+                description: 'Plátno, olej (50x80)',
+                price: '14 500 Kč'
+            },
+            {
+                img: 'images/catalog/france/dog.jpg',
+                author: 'Henri Selin',
+                title: 'Dáma se psem',
+                description: 'Akryl, papír (50x80)',
+                price: '16 500 Kč'
+            },
+            {
+                img: 'images/catalog/france/dupon.jpg',
+                author: 'François Dupon',
+                title: 'Procedura',
+                description: 'Barevná litografie (40x60)',
+                price: '20 000 Kč'
+            },
+            {
+                img: 'images/catalog/france/rose.jpg',
+                author: 'Louis Detouche',
+                title: 'Růže',
+                description: 'Papír, akryl (50x80)',
+                price: '12 000 Kč'
+            },
+            {
+                img: 'images/catalog/france/birds.jpg',
+                author: 'François Dupon',
+                title: 'Ptačí hostina',
+                description: 'Barevná litografie (40x60)',
+                price: '22 500 Kč'
+            },
+            {
+                img: 'images/catalog/france/fish.jpg',
+                author: 'Pierre Morange',
+                title: 'Krajina s rybou',
+                description: 'Barevná litografie (40x60)',
+                price: '20 000 Kč'
+            }
+        ],
+        germany: [
+            {
+                img: 'images/catalog/germany/city.jpg',
+                author: 'Kurt Werner',
+                title: 'Nad městem',
+                description: 'Barevná litografie (40x60)',
+                price: '16 000 Kč'
+            },
+            {
+                img: 'images/catalog/germany/bird-germany.jpg',
+                author: 'Max Richter',
+                title: 'Ptáčata',
+                description: 'Plátno, olej (50x80)',
+                price: '14 500 Kč'
+            },
+            {
+                img: 'images/catalog/germany/martin.jpg',
+                author: 'Martin Mayer',
+                title: 'Mezi listy',
+                description: 'Barevná litografie (40x60)',
+                price: '20 000 Kč'
+            },
+            {
+                img: 'images/catalog/germany/german.jpg',
+                author: 'Hermann Becker',
+                title: 'Jasný pták',
+                description: 'Barevná litografie (40x60)',
+                price: '13 000 Kč'
+            },
+            {
+                img: 'images/catalog/germany/wolf.jpg',
+                author: 'Wolf Bauer',
+                title: 'Datli',
+                description: 'Papír, akryl (50x80)',
+                price: '20 000 Kč'
+            },
+            {
+                img: 'images/catalog/germany/water.jpg',
+                author: 'Walter Hartmann',
+                title: 'Velké vody',
+                description: 'Papír, akryl (50x80)',
+                price: '23 000 Kč'
+            }
+        ],
+        england: [
+            {
+                img: 'images/catalog/england/smith.jpg',
+                author: 'Paul Smith',
+                title: 'Divoká zvěř',
+                description: 'Akvarel, papír (50x80)',
+                price: '19 500 Kč'
+            },
+            {
+                img: 'images/catalog/england/john.jpg',
+                author: 'John White',
+                title: 'Skalnaté pobřeží',
+                description: 'Barevná litografie (40x60)',
+                price: '17 500 Kč'
+            },
+            {
+                img: 'images/catalog/england/watson.jpg',
+                author: 'Jim Watson',
+                title: 'Řeka a hory',
+                description: 'Akvarel, papír (50x80)',
+                price: '20 500 Kč'
+            },
+            {
+                img: 'images/catalog/england/zillion.jpg',
+                author: 'Eugene Zillion',
+                title: 'Bílý papoušek',
+                description: 'Barevná litografie (40x60)',
+                price: '15 500 Kč'
+            },
+            {
+                img: 'images/catalog/england/eric.jpg',
+                author: 'Eric Gillman',
+                title: 'Noční ryba',
+                description: 'Papír, akryl (50x80)',
+                price: '12 500 Kč'
+            },
+            {
+                img: 'images/catalog/england/cat.jpg',
+                author: 'Alfred Barr',
+                title: 'Rezavá kočka',
+                description: 'Barevná litografie (40x60)',
+                price: '21 000 Kč'
+            }
+        ]
+    }
